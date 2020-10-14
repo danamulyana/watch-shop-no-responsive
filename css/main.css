@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: #f8f9fd; */
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fcfcfd;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 2.5px rgba(0,0,0,0.02);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 2;
+    background: #f8f9fd;
+}
+.logo{
+    height: 40px;
+    line-height: 43px;
+    margin: 3px;
+    line-height: 43px;
+    color: #444 ;
+    font-weight: 600;
+
+}
+nav ul{
+    display: flex;
+    margin-bottom: 0;
+}
+nav .menu-left li a{
+    height: 40px;
+    line-height: 43px;
+    margin: 3px;
+    padding: 0 22px;
+    display: flex;
+    font-size: 0.8rem;
+    /* text-transform: uppercase; */
+    font-weight: 500;
+    color: #333 ;
+    letter-spacing: 1px;
+}
+nav .menu-right li{
+    height: 40px;
+    line-height: 43px;
+}
+nav .menu-right li i{
+    padding: 5px;
+    color: #e4e7f0;
+    margin: 10px;
+}
+nav .menu-right li a{
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #333 ;
+}
+.search-box{
+    margin: 0 90px;
+    padding: 0 22px; 
+    display: flex;
+
+}
+.search-box i {
+    padding: 20px;
+    color: #e4e7f0;
+}
+.search{
+    border: none;
+    outline: none;
+    background: none;
+}
+
+/* show product */
+.main{
+    background-color: #fcfcfd;
+}
+.main .container.thumbs{
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+ul.thumb{
+    margin: 0 auto;
+    padding: 0;
+    float: left;
+}
+ul.thumb li{
+    list-style: none;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    
+}
+ul.thumb li img{
+    width: 100%;
+}
+.imgBox{
+    float: left;
+    width: 350px;
+    height: 350px;
+    margin: 5px;
+    overflow: hidden;
+}
+.imgBox img{
+    width: 100%;
+}
+.product-detail{
+    margin-top: 20px;
+}
+.product-detail h5 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #999;
+}
+.product-name{
+    background-image: url("img/LUNA.png");
+    display: block;
+    height: 50px;
+    background-attachment: fixed;
+}
+.product-name h3{
+    color: #999;
+    font-weight: 500;
+}
+.product-name h3 span{
+    color: #333;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.product-review{
+    display: flex;
+    color: #999;
+    font-weight: 400;
+    font-size: 11.5px;
+}
+.product-review ul{
+    display: flex;
+    margin: 0 15px;
+}
+.product-review ul li{
+    margin: 0 3px;
+}
+.add-to-bag{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+.add-to-bag p{
+    font-weight: 900;
+    font-size: 20px;
+    color: #666;
+    margin: 0 30px;
+    display: inline-block;
+}
+.btn-add{
+    color: white;
+    text-transform: uppercase;
+    background-color: #1da1f2;
+    padding: 12px 36px;
+    margin: 5px 0;
+    letter-spacing: 1px;
+    font-size: 14px;
+    border-radius: 40px;
+}
+.btn-add i{
+    margin: 5px;
+    font-size: 14px;
+    color: #eee;
+}
+.desc{
+    margin-top: 50px;
+    margin-bottom: 9px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgb(224, 221, 221);
+}
+.product-excel ul{
+    display: flex;
+    margin-bottom: 20px;
+}
+.product-excel li{
+    margin: 10px;
+    font-size: 14px;
+    color: #adb5bd;
+    font-weight: 500;
+}
+.product-excel li i{
+    margin: 0 5px;
+}
+
+/* spesifikasi */
+
+.specification, .spec-vid{
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+}
+.specification h3{
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #1da1f2;
+}
+.specification a {
+    margin-left: 50%;
+}
+.specification i{
+    color: #adb5bd;
+}
+.spec-detail{
+    display: block;
+}
+.spec-detail li{
+    margin-top: 48px;
+    /* padding-right: 5px; */
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+}
+.spec-detail .name{
+    color: #adb5bd;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* all product */
+
+.container.allproducts{
+    margin-top: 120px;
+}
+
+.container.allproducts h3{
+    font-weight: 500;
+    font-size: 20px;
+}
+.btn-back{
+    margin-left: 50%;
+    color: #999;
+    padding: 10px;
+    background-color: white;
+}
+.btn-next{
+    margin-left: 10px;
+    color: #999;
+    padding: 10px;
+    background-color: white;
+}
+.produk-all{
+    padding: 20px 0;
+}
+.produk{
+    background-color: white;
+    width: 300px;
+    vertical-align: top;
+    float: left;
+    margin-left: 40px;
+}
+.produk-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+}
+.produk-box img{
+    width: 80%;
+    height: 80%;
+}
+.produk-data{
+    display: flex;
+}
+.produk-data p{
+    font-size: 14px;
+    font-weight: 600;
+}
+.produk-data .price{
+    margin-left: 75%;
+}
+
+/* footer */
+
+.nav__desc{
+    margin-top: 50px;
+    align-items: center;
+    display: block;
+}
+.nav-footer{
+    display: inline-block;
+    width: 10%;
+    vertical-align: top;
+}
+.nav-footer.policies, .nav-footer.servic{
+    margin-left: 15%;
+}
+.nav-footer.policies li, .nav-footer.servic li{
+    width: 250px;
+
+}
+.nav-footer li {
+    margin: 50px;
+}
+.nav-footer li a{
+    color: #adb5bd;
+}
+.footer-right{
+    margin-top: 100px;
+}
+.footer-right .namesite{
+    font-weight: 400;
+    display: inline-block;
+    padding: 0 10px;
+}
+.footer-right .addres-site{
+    font-weight: 300;
+    padding: 5px 10px;
+    color: #adb5bd;
+    margin-top: 40px;
+    width: 210px;
+}
+.footer-bottom{
+    margin-bottom: 50px;
+}
+.footer-bottom ul{
+    display: flex;
+}
+.footer-bottom li ,.email-in{
+    margin-left: 30px;
+    color: #adb5bd;
+}
+.footer-bottom li a{
+    color: #adb5bd;
+}
+.footer-bottom li i, .footer-bottom li input{
+    align-items: center;
+}
+.email-in{
+    border: none;
+    outline: none;
+    background: none;
+    transition: 1s ease-in-out;
+}
+input[type=email]:focus{
+    border-bottom: 2px solid rgba(37, 37, 37, 0.02);
+}
+input[type=text]:focus{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.02);
+}
